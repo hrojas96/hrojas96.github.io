@@ -1,15 +1,15 @@
 const cvButton = document.getElementById('cvButton');
-let resume = document.getElementById('res');
-resume.style.visibility = 'hidden'; 
+let resume = document.getElementById('resume');
+resume.style.display = 'none'; 
 
 cvButton.addEventListener('click', ()=>{
     const { jsPDF } = window.jspdf;
     let doc = new jsPDF('p', 'pt', 'letter');
-    resume.style.visibility = 'visible';
+    resume.style.display = 'block';
     doc.html(resume, {
         callback: function (doc) {
             doc.save('Resume - Hazel Rojas Zamora.pdf');
-            resume.style.visibility = 'hidden'; 
+            resume.style.display = 'none'; 
         },
         x: 15,
         y: 40,
