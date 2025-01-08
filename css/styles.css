@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+    justify-content: center;
+    
+}
+.mainContainer {
+    margin: 0 auto; 
+    justify-content: center;
+ 
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;left: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                0 12px 4px -1px rgba(0, 0, 0, 0.06);
+    
+}
+.cont-header{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    max-width: 1000px;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.headerContent {
+    width: 95%;
+    max-width: 97%; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.container .logo{
+    float: left;
+    line-height:30px;
+ }
+
+.logo h1{
+    font-family: "Playfair Display";
+    font-size: 40px;
+    line-height: 30px;
+    margin: 0;
+    
+}
+
+.container .info{
+    float: right;
+    line-height: 30px;
+    margin-top: 1%;
+}
+
+.info p{
+    font-family:'Nunito Sans';
+    font-size: 12px;
+    line-height: 30px;
+    margin:0%;
+}    
+
+.container-fluid{
+    position: sticky;
+    z-index: 1000;
+}
+
+.navbar, .container-fluid, .navbar-toggler-icon, .navbar-nav, .nav-link{
+    font-family:'Nunito Sans';
+    font-size: 15px;
+    color: black;
+    font-weight: 600; 
+    padding-top: 0;
+    margin-top: 0%; 
+}
+
+.container-fluid a:hover{
+    font-weight:bolder
+}
+
+.cont-main{
+    max-width: 1000px;
+}
+
+/*INTRODUCTION*/
+#intro{
+    width: 95%;
+    max-width: 97%; 
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 1%;
+}
+
+#cont-col{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#intro p{
+    font-family:'Nunito Sans';
+    color: white;
+    font-size: 160%;
+}
+
+#intro h5{
+    font-family:'Nunito Sans';
+    color: white;
+    font-size: 180%;
+}
+
+#con-text{
+    width: 100%;
+    margin-top:auto;
+    margin-left: 7%;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+#intro button{
+    font-family:'Nunito Sans';
+    font-size: 100%;
+}
+
+#con-img{
+    margin-top:4%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+#intro img{
+    height: 230px;
+    /*float: right;*/
+}
+
+/*ABOUT ME*/
+
+#aboutMe{
+    width: 95%;
+    max-width: 97%; 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#aboutMe img{
+    height: 200px; 
+    float: left;
+    margin-top: 2%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    border-radius: 50%; 
+    object-fit: cover; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#aboutMe span{
+    font-family:'Nunito Sans';
+    font-size: 20px;
+    font-weight: bold;
+}
+#aboutMe p{
+    font-family:sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/*MY JOURNEY*/
+
+#myJourney{
+    margin-top: 2%;
+    width: 95%;
+    max-width: 97%;
+}
+
+#myJourney h1{
+    font-family:'Nunito Sans';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#myJourney p{
+    font-family:sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.timeline {
+    border-left: 2px solid #ccc;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+.event {
+    margin-bottom: 20px;
+    position: relative;
+}
+.event h3 {
+    margin: 1%;
+    font-size: 1.2em;
+    color: #333;
+}
+.event p {
+    margin: 5px 0 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+.event strong {
+    color: #000;
+    font-weight: bold;
+}
+.event:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+#resume{
+    width: 95%;
+    max-width: 97%;
+    display: block;
+}
+
+#fontResume{
+    font-size: 25px;
+}
+@media (max-width: 768px) {
+    .main-container {
+        width: 90%; 
+        padding: 0 5%; 
+    }
+}
